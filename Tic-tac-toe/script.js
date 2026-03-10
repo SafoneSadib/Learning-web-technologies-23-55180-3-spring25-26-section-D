@@ -10,6 +10,8 @@ let win = [
   [0,4,8],[2,4,6]
 ];
 
+
+//-------------------------------------//
 for (let i = 0; i < 9; i++) {
   cells[i].onclick = function() {
     if (!game || cells[i].innerHTML != "") return;
@@ -39,6 +41,9 @@ for (let i = 0; i < 9; i++) {
   }
 }
 
+
+//------------------------------------------//
+
 function resetGame(){
   for (let i = 0; i < 9; i++){
     cells[i].innerHTML="";
@@ -48,3 +53,4 @@ function resetGame(){
   game=true;
   status.innerHTML="Player X Turn";
 }
+
